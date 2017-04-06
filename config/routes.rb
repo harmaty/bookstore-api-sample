@@ -4,6 +4,4 @@ Rails.application.routes.draw do
     resources :books, only: :index
     resources :favorites, only: [:index, :create, :destroy]
   end
-
-  mount_ember_app :frontend, to: "/"
 end

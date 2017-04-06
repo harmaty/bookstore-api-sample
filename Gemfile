@@ -23,8 +23,7 @@ gem 'puma', '~> 3.0'
 # gem 'capistrano-rails', group: :development
 
 # Use Rack CORS for handling Cross-Origin Resource Sharing (CORS), making cross-origin AJAX possible
-# gem 'rack-cors'
-gem "ember-cli-rails"
+gem 'rack-cors'
 gem 'active_model_serializers'
 
 group :development, :test do
@@ -41,3 +40,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+ruby "2.3.3"
