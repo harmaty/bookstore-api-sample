@@ -7,7 +7,7 @@ class FavoritesController < ApplicationController
   def create
     @book = Book.find(params[:data][:id])
     current_user.books.push(@book)
-    head :no_content
+    render json: @book, serializer: FavoriteSerializer, status: :created
   end
 
   def destroy
